@@ -1,0 +1,48 @@
+generated: '2026-08-26'
+method: probed
+source: live HTTPS probes of https://pliops.com/.well-known/* on 2026-08-26
+note: >-
+  Every path on pliops.com — including every /.well-known/* path and a randomly generated
+  control path — answers HTTP 202 with a ~200-byte SiteGround "sgcaptcha" interstitial
+  (<meta http-equiv="refresh" content="0;/.well-known/sgcaptcha/?r=...">), not a document.
+  This is a CATCH-ALL bot challenge, so no status code on this host can be read as a hit.
+  hit_count is 0 and NO WellKnown or SecurityTxt pointer is emitted: nothing was fetched
+  and nothing was saved. api.pliops.com, docs.pliops.com and developer.pliops.com do not
+  resolve (NXDOMAIN), so there is no second host to probe.
+hit_count: 0
+soft_404_control:
+  path: /.well-known/api-evangelist-control-2271
+  status: 202
+  bytes: 210
+  body: sgcaptcha meta-refresh interstitial (identical shape to every other path)
+hosts:
+- host: https://pliops.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 202
+    file: null
+    note: sgcaptcha interstitial, not a document
+  - path: /.well-known/openid-configuration
+    status: 202
+    file: null
+    note: sgcaptcha interstitial, not a document
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    file: null
+    note: sgcaptcha interstitial, not a document
+  - path: /.well-known/api-catalog
+    status: 202
+    file: null
+    note: sgcaptcha interstitial, not a document
+  - path: /.well-known/ai-plugin.json
+    status: 202
+    file: null
+    note: sgcaptcha interstitial, not a document
+  - path: /.well-known/agent-card.json
+    status: 202
+    file: null
+    note: sgcaptcha interstitial, not a document
+  - path: /.well-known/agent.json
+    status: 202
+    file: null
+    note: sgcaptcha interstitial, not a document

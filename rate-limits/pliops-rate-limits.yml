@@ -1,0 +1,13 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  Web search of pliops.com and Pliops technical material, 2026-08-26; no developer portal
+  or API reference exists to carry limits.
+limit_count: 0
+rate_limits: []
+headers: []
+note: >-
+  Not applicable and undocumented. Pliops operates no public network API, so there is no
+  HTTP surface on which a rate limit could be published or observed — no X-RateLimit-*,
+  RateLimit-*, or Retry-After headers, and no documented 429 behaviour. The XDP data path
+  is a local PCIe/library call, not a metered remote endpoint. Recorded as an honest zero.

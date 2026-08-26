@@ -1,0 +1,22 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  registry.npmjs.org search, pypi.org/pypi/pliops/json, crates.io/api/v1/crates?q=pliops,
+  rubygems.org/api/v1/gems/pliops.json, api.github.com/orgs/pliops/repos and
+  api.github.com/search/repositories?q=pliops — all probed 2026-08-26
+package_count: 0
+packages: []
+note: >-
+  No first-party Pliops client library exists in any public package registry. npm search
+  for "pliops" returns 0 results; pypi.org/pypi/pliops/json and
+  rubygems.org/api/v1/gems/pliops.json both return 404; the crates.io search returns an
+  empty set. The github.com/pliops organization holds exactly two repositories and both
+  are forks of third-party projects (pliops/vllm, a fork of vllm-project/vllm, last pushed
+  2025-11-30; pliops/fio, a fork of the Flexible I/O Tester, last pushed 2026-01-22) — no
+  Pliops-authored SDK, no release, and no package published from either. Pliops' actual
+  developer-facing surface is a host-side C/C++ shared library ("storelib") that ships with
+  the XDP accelerator card under a customer/evaluation agreement rather than through a
+  public registry; a third-party customer integration repo
+  (github.com/NoamRabi/dbbench_pliops_integration) links against it via a
+  Findstorelib.cmake module, which is the only public trace of the library's existence.
+  version/published are null everywhere because there is nothing published to read.

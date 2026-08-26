@@ -1,0 +1,52 @@
+# Pliops
+
+> Pliops is an Israeli data-acceleration semiconductor company (founded 2017, Ramat Gan) that builds
+> the Extreme Data Processor (XDP), a low-profile PCIe accelerator card that offloads storage and
+> key-value data-path work from server CPUs. Its software surface is a host-side library, not a web
+> API: XDP-AccelKV / XDP-Rocks expose a RocksDB-API-compatible key-value engine used as a drop-in
+> under MySQL/MyRocks, Redis, KVRocks, TiDB, Kafka and Spark, and XDP LightningAI extends the same
+> acceleration to GenAI KV-cache offload for vLLM-based inference. Pliops was acquired by Astera Labs
+> in February 2026.
+
+## What an agent can and cannot do here
+
+Pliops operates NO public network API. There is no developer portal, no API reference, no OpenAPI,
+AsyncAPI, GraphQL SDL, JSON Schema, Postman collection, MCP server or A2A agent card published
+anywhere, and no first-party SDK in npm, PyPI, RubyGems, crates.io or Maven Central. Access to the
+XDP libraries runs through a sales/evaluation conversation (demo@pliops.com). An agent cannot call,
+authenticate against, or integrate with Pliops programmatically over the network.
+
+## Probe record (2026-08-26)
+
+- https://pliops.com/ — HTTP 202, SiteGround "sgcaptcha" bot-challenge interstitial on every path,
+  including a randomly generated control path. The site is live; our crawler is turned away.
+- https://api.pliops.com/ — DNS NXDOMAIN
+- https://docs.pliops.com/ — DNS NXDOMAIN
+- https://developer.pliops.com/ — DNS NXDOMAIN
+- https://github.com/pliops — HTTP 200; two repositories, both forks (vllm, fio). No first-party code.
+- npm / PyPI / RubyGems / crates.io searches for "pliops" — zero results / HTTP 404
+
+## Links
+
+- Website: https://pliops.com/
+- GitHub organization: https://github.com/pliops
+- Product evaluation contact: demo@pliops.com
+
+## Products (marketing surface, no machine-readable contract)
+
+- XDP — Extreme Data Processor: PCIe data accelerator card
+- XDP-AccelKV: accelerated key-value data service for RocksDB / WiredTiger-class storage engines
+- XDP-Rocks: RocksDB-API-compatible drop-in key-value engine
+- XDP LightningAI: GenAI KV-cache offload and acceleration for LLM inference
+
+## Corporate
+
+- Acquired by Astera Labs, February 2026 (~$70M; assets, IP and roughly half of staff moved into a
+  new Astera Labs R&D center in Israel).
+- Total funding prior to acquisition: approximately $205M across 5 rounds.
+
+## This profile
+
+- Maintained by API Evangelist as an independent third-party profile of a public API surface.
+- Source of record: https://raw.githubusercontent.com/api-evangelist/pliops/refs/heads/main/apis.yml
+- Corrections, re-scores and removal are free: info@apievangelist.com
