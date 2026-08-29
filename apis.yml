@@ -25,6 +25,9 @@ deliveryModel:
   method: derived
 image: https://avatars.githubusercontent.com/u/74628350?v=4
 url: https://raw.githubusercontent.com/api-evangelist/pliops/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Pliops has never operated a public developer program: there is no developer portal, no public API reference, no published OpenAPI or other machine-readable contract, and no published SDK in any packag"
 x-type: company
 x-source: harvest:secondary-market
 specificationVersion: '0.20'
