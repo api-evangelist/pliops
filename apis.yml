@@ -12,6 +12,17 @@ description: 'Pliops is an Israeli data-acceleration semiconductor company, foun
   public developer program: there is no developer portal, no public API reference, no published OpenAPI or
   other machine-readable contract, and no published SDK in any package registry — product and library
   access runs through a sales/evaluation conversation.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://avatars.githubusercontent.com/u/74628350?v=4
 url: https://raw.githubusercontent.com/api-evangelist/pliops/refs/heads/main/apis.yml
 x-type: company
