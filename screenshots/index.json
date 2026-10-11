@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "pliops",
+    "captured_at": "2026-10-11T191416",
+    "source_url": "https://pliops.com/",
+    "source_type": "Website",
+    "file": "pliops-2026-10-11T191416.png",
+    "bytes": 33541,
+    "capture": "playwright-local"
+  }
+]
