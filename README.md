@@ -64,5 +64,92 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Pliops is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/pliops_stock/
+Pliops is an Israeli data-acceleration semiconductor company, founded in 2017 and headquartered in Ramat Gan, that builds the Extreme Data Processor (XDP) — a low-profile PCIe accelerator card that offloads storage and key-value data-path work from server CPUs. Its software surface is delivered as host libraries rather than as a web API: XDP-AccelKV and XDP-Rocks expose a RocksDB-API-compatible key-value engine (the "storelib" shared library) used as a drop-in under MySQL/MyRocks, Redis, KVRocks, TiDB, Kafka and Spark, and XDP LightningAI extends the same acceleration to GenAI KV-cache offload for vLLM-based inference. Pliops raised roughly $205M from investors including Intel Capital, NVIDIA, AMD, SoftBank Ventures Asia and Western Digital, and was acquired by Astera Labs in February 2026, which took certain assets, IP and about half the staff into a new Israeli R&D center. Pliops has never operated a public developer program: there is no developer portal, no public API reference, no published OpenAPI or other machine-readable contract, and no published SDK in any package registry — product and library access runs through a sales/evaluation conversation.
+
+**Areas:** Company · Semiconductors · Hardware · Data Infrastructure · Storage · Key-Value Store · Data Acceleration · Artificial Intelligence · Israel
+
+## Pliops on APIs.io
+
+Everything profiled for Pliops is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pliops/](https://apis.io/providers/pliops/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Pliops Domain Security](https://apis.io/security/pliops/pliops-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Pliops Plans Pricing](https://apis.io/plans/pliops/pliops-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Pliops Rate Limits](https://apis.io/rate-limits/pliops/pliops-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://pliops.com/)
+- [GitHub](https://github.com/pliops)
+
+## API Evangelist rating
+
+**Kin Score 4.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 5.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pliops/](https://apis.io/providers/pliops/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Pliops: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pliops/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
